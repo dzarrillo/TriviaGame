@@ -16,19 +16,73 @@
 <body>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <p id="timeid">Timer in Seconds: <span id="sec">10</span></p>
-            </div>
-        </div>
-        <!-- Math problem -->
-        <div class="row">
-            <div col-12>
-                <p><span id="num1">5</span>  *  <span id="num2">7</span>  =  </p>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Math Riddler Trivia Game</h1>
+                <hr class="my-4">
+                <p class="lead">You will be given a riddle along with a random math problem</p>
+                <p class="lead">If you answer the math problem correctly you will be given the answer to the riddle</p>
+
             </div>
         </div>
 
-        <div class="row">
+        <!-- <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content
+                or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div> -->
+
+        <div class="row gameElements">
+            <div class="col-12">
+                <p id="timeid">Timer in Seconds:
+                    <span id="sec">10</span>
+                </p>
+            </div>
+        </div>
+        <!-- Math problem -->
+        <div class="row gameElements">
+            <div col-12>
+                <p>
+                    <span id="num1">5</span> *
+                    <span id="num2">7</span> = </p>
+            </div>
+        </div>
+
+        <!-- start game button -->
+        <div class="row begingame">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="buttonstart">Click Here to Start Game</button>
+            </div>
+        </div>
+
+        <!-- stats of game -->
+        <div class="row stats">
+            <div class="col-12">
+                <p>Correct Answers:
+                    <span id="tcorrect"></span>
+                </p>
+            </div>
+        </div>
+        <div class="row stats">
+            <div class="col-12">
+                <p>Wrong Answers:
+                    <span id="twrong"></span>
+                </p>
+            </div>
+        </div>
+        <div class="row stats">
+                <div class="col-12">
+                    <p>Not Answered:
+                        <span id="nanswered"></span>
+                    </p>
+                </div>
+            </div>
+            <!-- *********** -->
+
+        <div class="row gameElements">
             <div class="col-3">
                 <button id="button1" class="answer">12</button>
             </div>
@@ -45,7 +99,7 @@
     </div>
 
 
-   
+
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
