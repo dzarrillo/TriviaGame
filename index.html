@@ -25,16 +25,7 @@
 
             </div>
         </div>
-
-        <!-- <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content
-                or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </div> -->
-
+        
         <div class="row gameElements">
             <div class="col-12">
                 <p id="timeid">Timer in Seconds:
@@ -59,28 +50,43 @@
         </div>
 
         <!-- stats of game -->
-        <div class="row stats">
+        <div class="row" id="stats">
             <div class="col-12">
-                <p>Correct Answers:
-                    <span id="tcorrect"></span>
-                </p>
-            </div>
-        </div>
-        <div class="row stats">
-            <div class="col-12">
-                <p>Wrong Answers:
-                    <span id="twrong"></span>
-                </p>
-            </div>
-        </div>
-        <div class="row stats">
-                <div class="col-12">
-                    <p>Not Answered:
-                        <span id="nanswered"></span>
-                    </p>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="http://www.reactiongifs.com/r/cheering_minions.gif" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Correct Answers:
+                            <span id="tcorrect"></span>
+                        </p>
+                        <p class="card-text">Wrong Answers:
+                            <span id="twrong"></span>
+                        </p>
+                        <p class="card-text">Not Answered:
+                            <span id="nanswered"></span>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <!-- *********** -->
+        </div>
+        <!-- *********** -->
+
+        <div class="row" id="showriddle">
+            <div class="col-12">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" id="imgriddle" src="http://www.reactiongifs.com/r/tumblr_n35fr14IxQ1tw1vhco1_250.gif" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Correct Answers is:
+                            <span id="correctanswer"></span>
+                        </p>
+                        <p class="card-text">Answer:
+                            <span id="riddleanswer"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ****** -->
+
 
         <div class="row gameElements">
             <div class="col-3">
